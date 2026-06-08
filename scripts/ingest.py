@@ -47,8 +47,19 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> list:
             if buffer and len(buffer) >= 50:
                 chunks.append(buffer)
             # Seed new buffer with overlap tail + current paragraph
-            tail = buffer[-overlap:].strip() if len(buffer) >= overlap else buffer
-            buffer = (tail + ' ' + para).strip() if tail else para
+            tail = buffer[-overlap:].strip() if len(buffer) >= overlap else buffer.strip()
+            seeded = (tail + ' ' + para).strip() if tail else para
+            if len(seeded) > chunk_size:
+                # seeded buffer itself exceeds limit — character-split it
+                start = 0
+                while start < len(seeded):
+                    chunk = seeded[start:start + chunk_size].strip()
+                    if len(chunk) >= 50:
+                        chunks.append(chunk)
+                    start += chunk_size - overlap
+                buffer = ''
+            else:
+                buffer = seeded
         else:
             buffer = candidate
 

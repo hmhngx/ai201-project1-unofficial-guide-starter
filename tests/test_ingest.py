@@ -120,10 +120,17 @@ def test_clean_text_strips_whitespace_produces_clean_result():
 # --- chunk_text ---
 
 def test_chunk_text_no_chunk_exceeds_size_limit():
+    # Single large paragraph — tests character-split path
     text = "x" * 1200
     chunks = chunk_text(text, chunk_size=500, overlap=50)
     for chunk in chunks:
         assert len(chunk) <= 500, f"Chunk too long: {len(chunk)}"
+
+    # Two large paragraphs — tests paragraph-flush + overlap-seed path
+    text2 = "A" * 460 + "\n\n" + "B" * 460
+    chunks2 = chunk_text(text2, chunk_size=500, overlap=50)
+    for chunk in chunks2:
+        assert len(chunk) <= 500, f"Chunk too long after paragraph flush: {len(chunk)}"
 
 
 def test_chunk_text_no_empty_or_whitespace_only_chunks():
