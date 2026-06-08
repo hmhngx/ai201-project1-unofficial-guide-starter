@@ -1,0 +1,34 @@
+SOURCE: berkeleytime.com (grade data) + ratemyprofessors.com + quora.com (student reviews)
+COURSE: CS 189 - Introduction to Machine Learning
+URL: https://berkeleytime.com/catalog/COMPSCI/189
+
+NOTE: Berkeleytime is a React single-page app; grade distribution data was retrieved from
+https://berkeleytime.com/grades/0-2347-all-shewchuk,-j
+Student review text was collected from Rate My Professors and Quora as Berkeleytime does not host written reviews.
+
+BERKELEYTIME GRADE DATA (aggregated across semesters, Shewchuk sections):
+Grade distribution shows a significant curve; historical pass rates are high.
+Enrollment is competitive — the course fills quickly each semester.
+
+REVIEWS:
+
+Review 1 (Rate My Professors, Jun 2025 — Quality: 5/5, Difficulty: 5/5, Grade: A):
+Shewchuk is an amazing professor. He redid an entire lecture once when the audio cut out on the recording so that remote students could get the same experience. That level of dedication is rare. He's funny, incredibly knowledgeable, and great at communicating hard concepts. The class itself is brutal — expect to spend 15-25 hours per week between homework, coding assignments, and studying for exams. But if you want to go into ML, this is the course you need to take at Berkeley.
+
+Review 2 (Rate My Professors, Jun 2025 — Quality: 5/5, Difficulty: 4/5, Grade: A):
+Shewchuk is funny, down to earth, great at communicating intuition, and has very organized lecture notes. CS 189 is hard but Prof. Shewchuk is a great lecturer. Section is math-heavy and homeworks are long and tough. Exams have harsh grading schemes. But it's 100% worth it — after coming out of the class you'll feel like you actually learned machine learning, not just how to use sklearn. Amazing guy, very inspiring.
+
+Review 3 (Rate My Professors, May 2025 — Quality: 5/5, Difficulty: 4/5, Grade: Audit):
+Shewchuk has some eccentricities but he is genuinely a good professor. He was flexible with deadlines and even gave a lecture twice because it didn't record the first time. The course features substantial reading and homework assignments with test-heavy evaluation. The math prerequisites (linear algebra, multivariable calculus, probability) are non-negotiable — you will not survive without them.
+
+Review 4 (Quora — student response to "What is it like to take CS 189 at Berkeley?"):
+Be prepared to work really hard in this class. After coming out of the class though, you'll feel like you learned a lot. Despite all the pain that you may have gone through while taking the class, it's definitely worth it in retrospect. The homeworks combine mathematical derivations with coding in Python/NumPy. Early problem sets are heavily mathematical; later ones shift to more coding and debugging. If you don't have a solid understanding of linear algebra and probability going in, you'll be lost from day one.
+
+Review 5 (Quora — student response to "What is it like to take CS 189 at Berkeley?"):
+CS 189 is an intensive, fast-paced introduction to probabilistic and statistical machine learning. The emphasis on mathematical derivations, algorithmic implementation, and problem solving under time pressure is real. Machine learning is not Shewchuk's primary research area, but his background in geometry lets him make beautiful visualizations that build intuition for why algorithms work. The class feels like a structured survey of ML tools, which is exactly what you need before going deeper into any subfield.
+
+Review 6 (AWE Berkeley Medium guide — upper-division CS overview):
+CS 189 is extremely time consuming and math-heavy — it is the more demanding counterpart to CS 188. If you want to go into machine learning, take CS 189. It is very relevant for industry and real-world machine learning applications. Some students recommend taking EE 127 before or alongside CS 189, as there is meaningful overlap in the early weeks covering SVD, PCA, and optimization techniques.
+
+Review 7 (Berkeley Codebase guide — course overview):
+The mathematical prerequisites for CS 189 are far more useful predictors of success than programming background. Berkeley graduate students are exceptionally qualified, and this should tell you something about the class's level of difficulty (high) and hand-holding (close to none). Expect homeworks that take 10-15 hours each, and exams that emphasize derivations and short proofs. Students who come in well-prepared consistently describe the course as one of the best they took at Berkeley.

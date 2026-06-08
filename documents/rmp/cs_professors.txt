@@ -1,0 +1,83 @@
+=== Professor: Dan Garcia | Rating: 3.7/5 ===
+Professor Garcia is an amazing lecturer and a very kind person. That being said, he made the final very hard this semester without explanation, refused to release distribution data, and shifted the average grade nearly a full letter grade down. He then blamed students for using AI for doing poorly.
+
+I would not take this class unless you have to with him. Let's start with a fact that he failed over 20% more people in one of his classes and the fail rate for this one rose above 10% which hasn't happened according to daily cal. There is very little partial credit and it's not graded on a curve so even if the average is low he's willing to fail.
+
+Actually dont even get me started I didn't even need this class, and here I am, tanking my grad school gpa for this class. He made the INTRODUCTORY cs class so difficult for no reason, and so many of the assignments are so discouraging and made me lose interest.
+
+Dan was a great 61A professor. Great teaching style, always made lectures lively and entertaining, and encouraged participation with a 'flipped classroom' style. Exams were hard, though, and took lots and lots of practice and preparation to do well in.
+
+Clear lectures, fair exams.
+
+---
+
+=== Professor: John DeNero | Rating: 4.3/5 ===
+Fair class, pretty easy, tests were not hard to do well on.
+
+Professor DeNero is very kind, tells jokes, and occasionally brings his dog to class. Utilize office hours, complete assignments early, and thoroughly study the past exams and course worksheets. If you stay on top of the material, you will do well.
+
+DATA8 is the perfect example of a weeder class. The lectures were not helpful at all and were often filled with jargon. There were so many assignments during the week that it was difficult to understand all the concepts, as many of the labs and homeworks had the same problems/code. The assignments were also often unrelated to the exams.
+
+Clear lectures, fair exams.
+
+If you don't have any background in DS or CS, Denero's Data 8 is the perfect introduction to it. His excitement for the subject makes material feel so much more interesting. His lectures can run a little slow at times but overall he is great at teaching. His exams aren't very difficult but value critical thinking skills more than others.
+
+---
+
+=== Professor: Paul Hilfinger | Rating: 3.4/5 ===
+Awesome grading system: put the work into the projects, get the grade. The projects will put you through hell but you learn so much. Hilfinger is also a decent lecturer with some comedic moments.
+
+Extremely hard projects and bad lectures.
+
+This guy was a good professor, his structuring of the class made it easy to get an A if you put the work in.
+
+LEGEND! The best Data Structures Professor there ever was. You learn a lot. Projects are hell especially gitlet!!
+
+He's the goat. Never before have I met a professor be so fair with their grading scheme. His lectures are kinda confusing but he's legit. 100/100.
+
+Hilfinger is a harsh guy. It often feels like he's talking down to his students, and some of his rules seem cruel. That said, the projects are super valuable and you really do learn a lot if you put in the time.
+
+Projects took 80+ hours, not because they are difficult but because the autograder is harsh. His grading scheme is very transparent though, and if you do the projects you will get a good grade.
+
+61B with Hilfinger is one of those classes that people would call 'binary'. Either you like it (1), or you don't (0). I personally found it very rewarding. Start the projects early.
+
+---
+
+=== Professor: Satish Rao | Rating: 2.4/5 ===
+Professor Rao's teaching style was difficult to follow, and he did not feel supportive when students needed help progressing in the course.
+
+Super hard exams. Not bad of a guy (quite funny outside of class), but his teaching style is terrible. Made exams super difficult compared to past semesters.
+
+I really appreciate Rao's emphasis on intuitive understanding of content and his approach to learning. Tests were hard, but grading was fair and TAs were quite responsive.
+
+This class is all learn the material by yourself. Don't even try to understand his lecture, since he just reads the slide without explanation and asking you 'right?'
+
+Class went over tons of topics really fast. Prof himself is OK but notes, discussions, and homework are the key to learning. The TAs were helpful. Exams were brutal.
+
+---
+
+=== Professor: Jonathan Shewchuk | Rating: 4.7/5 ===
+He uses a good style and tempo, going at the right pace for people to learn these new concepts. You can really tell he cares about his students' understanding.
+
+Fantastic. Love him. Cares a lot about the subject and is nice and helpful.
+
+He's funny, down to Earth, great at communicating intuition, has organized lecture notes, and he is really inspiring. He even redid a lecture once when the audio cut out on the recording so remote people could get the same experience.
+
+His lecture notes are very good and he is very flexible. For example, he pushed back homework deadlines when students were struggling and always made himself available during office hours.
+
+CS189 is hard but Prof. Shewchuk was a great lecturer for this course. Lectures were clear and built intuition. The course is math-heavy and homeworks are long and tough, but he grades fairly and explains concepts well.
+
+---
+
+=== Professor: Josh Hug | Rating: 4.8/5 ===
+Hands down the best professor in the CS department.
+
+Josh Hug is the GOAT. Super clear lectures, very caring person, and also extremely humorous. Exams were fair and projects rewarding.
+
+Took Hug Spring '25 when he was teaching with Yokota. I enjoyed the class; it was cool to have some meatier projects compared to 61A, and a large part of the class was just a different data structure every week or so, so looking back at course material is pretty easy because there's a clear division of lecture content. Exams were fair.
+
+Professor Hug and his CS61B curriculum is perfection. Everything about the class is super fun, and it really feels like what you'd expect out of a lower div CS class at a top university like Berkeley. Make sure to go to lectures, even if you opt out of attendance tracking.
+
+Hug is an amazing professor who has a sense of humor, teaches really well, and looks out to his students. Tests are soooo hard though and the workload is insane so be sure to work very hard.
+
+---

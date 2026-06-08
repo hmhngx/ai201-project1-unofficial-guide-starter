@@ -1,0 +1,35 @@
+SOURCE: berkeleytime.com (grade data) + hkn.eecs.berkeley.edu + ratemyprofessors.com (student reviews)
+COURSE: CS 61C - Great Ideas in Computer Architecture (Machine Structures)
+URL: https://berkeleytime.com/grades/0-2325-spring-2012-all&1-2325-fall-2021-all
+
+NOTE: Berkeleytime is a React single-page app; grade distribution data was retrieved from
+https://berkeleytime.com/grades/0-2325-spring-2012-all&1-2325-fall-2021-all
+Student review text was collected from HKN course guides and Rate My Professors as Berkeleytime does not host written reviews.
+
+BERKELEYTIME GRADE DATA (aggregated across semesters):
+Grade distributions vary by instructor and semester. The course has been offered every semester
+for many years. Enrollment is large — one of the highest-enrollment upper-division CS courses.
+Historically competitive grading, especially in sections taught by professors with stricter curves.
+
+REVIEWS:
+
+Review 1 (HKN Course Guide — student tips, CS 61C):
+Start early on the projects, especially since some of the projects require use of the school servers. Server capacity gets severely strained as deadlines approach and performance slows to a crawl. The projects are what most people view as the hardest portion of the class — depending on your interest in the subject, you may need to devote most of your waking hours to 61C projects near the end of the semester. Homework assignments are online question-answer format and take around 2-4 hours each. Labs can mostly be completed during scheduled lab time.
+
+Review 2 (HKN Course Guide — career relevance, CS 61C):
+Take CS 61C early if you are interested in hardware or the hardware-software interface, as it builds on CS 61A and 61B and opens career opportunities in systems-focused engineering. Some companies ask technical interview questions covering logic, bit manipulation, and CPU design concepts — this course covers all of that. The course is much more difficult and more in-depth than most students expect for a lower-division requirement.
+
+Review 3 (Rate My Professors — Professor Nick Weaver section):
+Weaver assigns one homework, one lab, and one project every week. Do not take 61C with Weaver unless you are ready to spend 20+ hours weekly on this class. That said, his unmatched energy makes computer architecture genuinely interesting, even if you came in with zero interest in hardware. His presentation style is electric and his explanations are unusually clear for such a dense subject.
+
+Review 4 (csdiy.wiki — self-study review of CS 61C):
+In a word, this is the best computer architecture course I have ever taken. The course explores the full software-hardware stack: C programming, RISC-V assembly, digital logic, pipelined CPU design, caches, virtual memory, and parallelism. Project 2 — writing a fully-connected neural network in RISC-V assembly to classify MNIST digits — is one of the most memorable assignments in any CS curriculum. Project 3 involves building a two-stage pipelined CPU in Logisim. Project 4 uses OpenMP and SIMD to optimize matrix operations. The projects are hard, but the concepts you learn are foundational.
+
+Review 5 (AWE Berkeley Medium guide — course pairing context):
+CS 61C is commonly paired with CS 188 by students trying to double up, but this combination is considerably difficult. CS 188 has a much lighter workload compared to upper-division counterparts, so the pairing is technically feasible — but CS 61C's project load dominates your schedule. If you are not interested in systems, plan your semester carefully before pairing it with another demanding course.
+
+Review 6 (Rate My Professors — Dan Garcia section):
+Garcia is an amazing lecturer and a very kind person. He brings real enthusiasm to every lecture and makes the material accessible. The course covers C, RISC-V assembly, pipelining, cache memory, virtual memory, and concurrency — a huge amount of ground. Projects are long and challenging but you learn an enormous amount about how computers actually work. This is one of those courses that changes how you think about software forever.
+
+Review 7 (Reddit r/berkeley — general CS 61C thread):
+CS 61C is genuinely one of the most interesting courses in the CS curriculum if you like systems. The jump from writing C to RISC-V assembly to building a CPU in Logisim to parallelizing matrix code is exhilarating. It's a lot of work — the projects are serious time commitments — but the payoff is that you actually understand what happens between your Python code and the transistors. Highly recommend for anyone interested in systems, compilers, or performance engineering.
