@@ -1,0 +1,32 @@
+SOURCE: reddit.com/r/cs61a
+TITLE: CS 61A Megathread — Tips, Advice, Workload, Exams [READ BEFORE POSTING]
+URL: https://www.reddit.com/r/cs61a/comments/megathread_tips_advice
+
+POST:
+Welcome to the CS 61A megathread! Use this thread for general questions about the course, tips for success, workload discussion, and exam preparation. Please search here before making a new post.
+
+CS 61A is UC Berkeley's introductory computer science course covering the Structure and Interpretation of Computer Programs. It is taught primarily in Python with additional exposure to Scheme and SQL. The course includes projects (Hog, Cats, Ants, Scheme Interpreter), weekly labs, homework, and two midterms plus a final exam.
+
+COMMENTS:
+
+u/former_61A_student: The #1 thing that made a difference for me: DO THE PRACTICE MIDTERMS. Not just one or two — do them like crazy. "Practice tests, practice tests, practice tests... its the only way!" Seriously, the exam format is very consistent across semesters so past exams are the best prep you can get.
+
+u/cs_tutor_csm: Treat 61A as a math class in how you study. Repeatedly do problems until you get the intuition. Don't just read through solutions — sit down and grind problems until the pattern-recognition kicks in. "Grind practice problems. Finding solutions on a tight timeframe is all about recognizing typical problem structures."
+
+u/incoming_freshman: What's the workload actually like? I have a little coding background from AP CS but nothing with Python.
+
+u/sophomore_reply: It's manageable but you have to stay on top of things. The projects are the big time sinks — Ants (project 3) is the hardest and can take 20+ hours if you're not careful. Hog and Cats are more straightforward. Start every project the day it comes out. Don't wait.
+
+u/senior_cs_mentor: Three things that helped me survive 61A: (1) WATCH THE VIDEOS. Even if you go to lecture, the DeNero lecture videos are incredible and worth rewatching when you're confused. "ALWAYS watch the videos. They help so much — even if you don't go to a single lecture, the videos can carry you through this class." (2) GO TO OFFICE HOURS. The staff is friendly and the queue moves. Don't be afraid to go even for small questions. (3) Make friends and collaborate on homework within the collaboration policy.
+
+u/no_coding_background: I took the class with absolutely no prior experience, and despite what everyone says, it is manageable. It's hard but doable. The key is to not fall behind — once you're behind in 61A it is really hard to catch up. If you have NO experience consider taking CS10 first.
+
+u/recursion_help: Recursion was what got me in week 3. I had to rewatch those lectures about 5 times before it clicked. Understanding how coding works conceptually is super useful, more so than doing practice without conceptually understanding. Don't just memorize the pattern — understand WHY the base case is needed and WHY the recursive step works.
+
+u/exam_taker_2024: Midterm 1 covers up to higher-order functions and recursion. Midterm 2 adds OOP and trees. The final is comprehensive. Exam tip: CS 61A is not about syntax but logic. If you can explain your reasoning, you're usually on the right track. The graders want to see that you understand the concept.
+
+u/lab_TA_account: Come to lab! Lab sections have shorter queues than lecture office hours and the lab exercises are designed to directly reinforce what you need for homework and projects. Also, Collaborative Student Mentoring (CSM) tutoring sections are free and super helpful — highly recommend signing up.
+
+u/graduated_now_swe: Looking back, 61A taught me how to think about abstraction — breaking big problems into smaller, manageable pieces. That skill shows up everywhere in software engineering. Stick with it even when it feels overwhelming. "Collab with other students! This class can be hard if you try and do the work solo."
+
+u/first_gen_student: I was really intimidated going in. First-gen, didn't know anyone in CS. But DeNero is awesome — went to his office hours and he was genuinely helpful and encouraging. Don't let imposter syndrome hold you back from seeking help. The whole staff wants you to succeed.

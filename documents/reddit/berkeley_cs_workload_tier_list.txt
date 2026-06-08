@@ -1,0 +1,24 @@
+SOURCE: reddit.com/r/berkeley
+TITLE: Berkeley CS upper-division workload tier list — what's your ranking?
+URL: https://www.reddit.com/r/berkeley/comments/berkeley_cs_workload_tier
+
+POST:
+I've seen various tier lists floating around but they're always one person's opinion. Wanted to crowdsource a more reliable ranking. How would you rank upper-division CS courses by workload/difficulty? I'll start with what I've heard: CS 164 (Hilfinger) at the top, CS 162 up there for project load, CS 189 for math intensity, CS 170 for proof volume. Fill in the rest and explain your reasoning.
+
+COMMENTS:
+
+My personal tier list based on having taken most of these: S tier (survival mode): CS 164 with Hilfinger, CS 162. A tier (heavy but manageable): CS 170, CS 189, CS 184. B tier (solid workload, rewarding): CS 186, CS 169, CS 160. C tier (lighter, still useful): CS 161, CS 188, CS 176, CS 172. The AWE Berkeley guide's ranking of "164 > 184 > 150 > 170 > 169 > 162 > 189 > 160 > 186 > 161" is a reasonable baseline but varies wildly by student background.
+
+CS 162 deserves its reputation. It is legitimately the most project-heavy course in the CS department. You're building a real OS from spec, in groups, basically from scratch. The spec tells you what to build but not how, and figuring out the "how" for complex concurrent systems is where the time goes. That said, it's also incredibly rewarding — students come out able to discuss memory management, scheduling, file systems from real implementation experience, not just textbook knowledge. Just don't take it simultaneously with anything else heavy.
+
+CS 164 (Programming Languages and Compilers) with Hilfinger is in a class of its own. Hilfinger is a rigorous professor and his exams reflect that. The course requires you to build a compiler incrementally — lexer, parser, semantic analysis, code generation — and each phase builds on the last. If you fall behind early you suffer later. It's the kind of course where students with strong theoretical foundations fly and everyone else struggles.
+
+CS 189 (Machine Learning) is the math-heaviest of the applied courses. If you haven't done multivariable calc, linear algebra, and probability recently, you will feel it immediately. The homework problems are long and the exams test deep understanding. Compare to CS 188 which covers similar territory more accessibly and with much lower workload — 188 is genuinely described as "fun" while 189 is "extremely time consuming."
+
+CS 186 (Databases) is a good middle ground. The exam format is fair, the workload is manageable, and the content is directly applicable to systems design interviews. It consistently gets called "one of the most useful courses" despite not being the most difficult. Pairs well with CS 161 (Security) which also has a lighter workload and fair exams. Both are strong choices for a semester when you're already heavy on another course.
+
+CS 170 workload varies massively by how fast you internalize the proof techniques. Some students report it feeling lighter than 162 once the mindset clicks. Others report 15+ hour pset weeks all semester. The median experience is probably 10-12 hours per pset. It's not project-heavy — all written problem sets — which makes it feel different from the systems courses. Mentally draining in a way that 162 project grind isn't.
+
+Hot take: CS 188 is underrated. The workload is light but the ideas are genuinely interesting — search algorithms, Bayesian networks, MDPs, reinforcement learning basics. It's a good course to take alongside something brutal because it won't wreck your semester and you come out with a conceptual AI foundation. Just don't expect it to be as rigorous or industry-ready as CS 189.
+
+Data 100 deserves a mention as the gateway data science course. The prerequisites (Data 8) are now strictly enforced. It covers Pandas, SQL, data visualization, regression, and basic ML — a very solid overview. Workload is moderate and it's praised for real-world applicability. Good to take early in your upper-division sequence if you're interested in data science or ML.

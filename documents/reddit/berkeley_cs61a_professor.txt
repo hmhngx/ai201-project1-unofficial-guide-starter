@@ -1,0 +1,28 @@
+SOURCE: reddit.com/r/berkeley
+TITLE: Which CS 61A professor should I take? DeNero vs Pamela Fox
+URL: https://www.reddit.com/r/berkeley/comments/cs61a_professor_comparison
+
+POST:
+Incoming freshman here trying to plan my schedule. I want to take CS 61A in the fall but I see there are different professor options — John DeNero and sometimes Pamela Fox. Which one is better? I have a little bit of Python experience from high school but nothing serious. Any advice appreciated!
+
+COMMENTS:
+
+u/berkCS_junior: DeNero is basically the gold standard for 61A. His lecture videos are so good that even the official course page tells you to watch them — it literally says "WATCH DENERO VIDEOS AT THE BARE MINIMUM." He makes everything super clear and his analogies are great for building intuition.
+
+u/eecs_sophomore: I took it with DeNero and honestly the videos are better than attending live lecture. He records everything and you can watch at home. Go to lecture in person for the experience but don't stress if you can't. Clear grading criteria, fair exams.
+
+u/calBear2024: Had Pamela Fox — she was an amazing lecturer! Very engaging through her use of examples in lecture. Assignments were interesting, exams were challenging but manageable. Would absolutely take her again. Don't believe the haters.
+
+u/cs_upperclassman: Just want to chime in — the professor matters a lot less than your habits. DO THE PRACTICE MIDTERMS. That is the best way to prepare for exams no matter who is teaching. Start every project early, don't wait until the night before.
+
+u/anon_freshman_2023: Took Fox in Spring 2022 and got an A-. She's an amazing lecturer, passionate about the material. The exams are tough but that's more of a department-wide thing than instructor-specific. Sad she left Berkeley after that.
+
+u/data_sci_major: DeNero basically created the Python version of the course and runs it with 3000+ students per semester. He's great at answering questions despite the massive class size and his office hours are genuinely helpful. "Get all the help you can! Don't be afraid of office hours: DeNero is awesome."
+
+u/hkn_tutor: From a tutoring perspective, the single most common mistake students make in 61A is treating it like a syntax memorization class. It's about LOGIC. CS 61A is not about syntax but logic — try to understand the logic as much as possible. That applies regardless of which professor you have.
+
+u/transfer_student_cs: I'll be real — one review I saw called Fox a "horrific lecturer" and said attending her lectures was a waste of time. I think that's harsh but it shows the reviews are mixed. DeNero seems to have more consistent positive reviews overall. Either way, collab with other students! The class can be hard if you try to do the work solo.
+
+u/gradTA_61A: TA here. Both professors care deeply about students. The curriculum is the same. What will make the biggest difference: go to office hours early when you're stuck, not the night before something is due. Make friends in the class and study together.
+
+u/norcal_cs_kid: I had no coding experience going in and was terrified. DeNero's videos genuinely carried me through the course. Watch them even if you go to lecture. "Obviously watch the videos, try not to watch it at 2x speed." — real advice from a former student.

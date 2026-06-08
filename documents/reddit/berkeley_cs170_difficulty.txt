@@ -1,0 +1,22 @@
+SOURCE: reddit.com/r/berkeley
+TITLE: How hard is CS 170 really? Tips for surviving algorithms?
+URL: https://www.reddit.com/r/berkeley/comments/cs170_difficulty_tips
+
+POST:
+Incoming junior here — I have CS 61B and CS 70 done and I'm planning to take CS 170 next semester. I keep hearing mixed things about it. Some people say it's totally manageable if you keep up, others say it's the hardest proof-based class in the CS department. What's the actual deal? Is the difficulty more like "lots of work" or "conceptually impossible"? Any tips on which professors to avoid or seek out? Also wondering whether to pair it with something lighter like CS 188 or just load up.
+
+COMMENTS:
+
+CS 170 is genuinely hard but in a specific way. It's not that any single topic is impossible — it's that you have to develop an entirely new way of thinking about problems. Every week you're asked to prove correctness of algorithms, prove lower bounds, do reductions. If you're used to just coding your way through assignments, the adjustment is brutal in week 1-3. After that it starts to click. Start your psets the day they're released. Not the day before. The day they're released.
+
+I took it with Umesh Vazirani and honestly it was one of the best academic experiences I've had at Cal. His lectures are so clear — he has this way of building up intuition before jumping to formalism. RateMyProfessors reviews aren't lying when they say he explains things with "unparalleled clarity." Exams were fair, no gotcha questions, just testing whether you understood the core ideas. Would absolutely recommend taking it with him if you can.
+
+Pairing 170 with 188 is the classic move and I'd endorse it. 188 is interesting and the workload is genuinely lighter — good for your mental health when 170 psets are eating your soul on Wednesday nights. Avoid pairing 170 with 162 unless you're masochistic. 162 is possibly the most project-heavy course at Cal and both courses together is a recipe for sleep deprivation.
+
+The pset grind is real. Plan on 10-15 hours a week for problem sets alone, on top of 3 hours of lecture and 1 hour of discussion. The HKN course guide says as much and I can confirm. Form a study group early — seriously, not just for moral support but because talking through reductions out loud is the best way to get them. The book problems (Dasgupta, Papadimitriou, Vazirani) are especially useful for midterm review.
+
+NP-completeness and reductions are where most people either sink or swim. The key insight that unlocked it for me: you're not trying to solve the problem, you're trying to show that IF you could solve problem B THEN you could solve problem A. Once that clicked, 3-SAT to Clique to Vertex Cover all made sense. Before that click — total confusion. Give yourself time.
+
+Dynamic programming was my personal nemesis. The trick is to really nail down your subproblem definition before you try to write a recurrence. I spent half a pset writing a recurrence for the wrong subproblem and had to restart. Office hours are gold for DP — TAs are really good at pointing out where your subproblem definition goes wrong without just giving you the answer.
+
+One thing I wish I knew going in: the midterms are NOT in order of difficulty. The first problem isn't necessarily the easiest. Read through everything before you start writing. And be precise but concise in your proofs — not every part of every problem is weighted equally, so don't spend 45 minutes perfecting a 2-point sub-part.

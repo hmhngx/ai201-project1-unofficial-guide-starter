@@ -1,0 +1,30 @@
+SOURCE: reddit.com/r/berkeley
+TITLE: CS 61B megathread — Josh Hug, workload, projects, Gitlet — share your experience
+URL: https://www.reddit.com/r/berkeley/comments/cs61b_discussion_hug
+
+POST:
+Starting a thread for CS 61B discussions since I keep seeing questions about it scattered everywhere. Josh Hug is the main instructor most people take it with now. What's the actual workload like? Is Gitlet as brutal as people say? How do you approach the exams? Share your experience below.
+
+COMMENTS:
+
+u/data_structures_done: Professor Hug and his CS61B curriculum is perfection. The course fits exactly what you'd expect from a lower division CS class at a top university like Berkeley. He covers data structures deeply, Java fundamentals properly, and the projects are genuinely rewarding. Finished the semester with conceptual understanding I didn't have before.
+
+u/gitlet_survivor: Gitlet is no joke. You're implementing a simplified version of Git from scratch in Java — commits, branches, checkout, merge, the whole thing. Start early and read the spec carefully multiple times before writing a single line of code. The spec is long but it contains every answer you need. Students often say major projects can require "around 50 hours over the course of weeks."
+
+u/hug_fan_account: I would go to the lectures for the experience and not for the attendance points. Hug is hilarious and actually inspiring. His explanations of data structures are the clearest I've found anywhere — better than any textbook. He makes tree traversals and graph algorithms feel intuitive.
+
+u/honest_review_61b: Tests are soooo hard though and the workload is insane. I came in thinking I knew Java and got humbled fast. That said, Hug teaches really well and is a very caring person, and also extremely humorous. He looks out for his students. Would absolutely take again despite the difficulty.
+
+u/cs_junior_2024: Took CS61B with Hug in Spring 2023. The course is structured really well — meatier projects with clear division of lecture content. Exams were fair given the material covered. I audited another semester later and it was even better. 94% of people on Rate My Professors say they'd take him again.
+
+u/bearmaps_tips: BearMaps (the mapping project) is also intense — you build a web mapping app of Berkeley that calculates shortest routes using A* search. Make sure you understand tries for the autocomplete and have a solid grasp on graph algorithms before starting. Don't underestimate the debugging time.
+
+u/hkn_61b_guide: From the HKN course guide: outside coursework is approximately 5 hours per week on average, but "the majority of the time spent on this class is on the projects." Plan for heavy project weeks. Hug's midterms count for more of the grade compared to Hilfinger's version, but Hilfinger's projects used to exceed 1000 lines of code. Hug keeps projects intensive but more structured.
+
+u/intro_cs_now_swe: CS61B was genuinely the class that made me a programmer. 61A teaches you to think recursively; 61B teaches you to think about efficiency and design. The jump from 61A to 61B is real — you go from Python to Java AND the conceptual difficulty increases. Give yourself buffer time in your schedule.
+
+u/lab_section_tip: Attend lab sections. Lab exercises in 61B directly teach you things the projects will test. Also, don't skip lectures even if recordings are available — Hug does live coding and Q&A that doesn't always make it cleanly into the recording. His videos are cool but live is better.
+
+u/transfer_student_61b: One thing nobody tells you: start debugging early. In 61B projects you will spend as much time debugging as writing new code, maybe more. Set up a good Java debugger (IntelliJ is what the course uses) in week 1 and practice using it before you need it desperately at 2am before a deadline.
+
+u/passed_with_a: My advice: do every lab, every homework, every optional practice problem. The curve exists but don't rely on it. Understanding every data structure well — arrays, linked lists, trees, hash tables, graphs — is what carries you through exams. Hug's lectures are the best resource. Watch them, take notes, implement the things he describes.

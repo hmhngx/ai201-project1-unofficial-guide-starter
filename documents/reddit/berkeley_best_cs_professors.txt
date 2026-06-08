@@ -1,0 +1,22 @@
+SOURCE: reddit.com/r/berkeley
+TITLE: Who are the best CS professors at Berkeley? Genuine recommendations please
+URL: https://www.reddit.com/r/berkeley/comments/berkeley_best_cs_profs
+
+POST:
+Rising sophomore CS major here. I've heard the name "Josh Hug" mentioned approximately 400 times in my first year and I want to understand who the actually legendary professors are across the CS curriculum. Not looking for easy A's — looking for professors who genuinely make you a better engineer or thinker. Who are the ones worth seeking out even if their course has a waitlist?
+
+COMMENTS:
+
+Josh Hug for CS 61B, no question. His RateMyProfessors page is sitting at 4.8/5 with 95% would-take-again and those numbers are earned. Every lecture is clearly structured, he genuinely cares whether students understand, and his projects (especially the later ones like the game-tree search) are the kind of thing you reference in interviews. People say things like "Hands down the best professor in the CS department" and I wouldn't argue. If Hug is teaching 61B, you take Hug.
+
+John DeNero for CS 61A is the obvious answer for intro. He brings his dog to class sometimes, which is reason enough, but also his excitement for the material is contagious. He rates 4.3/5 across nearly 280 reviews. Criticism you'll hear: his lectures can run slow and occasionally the assignments feel disconnected from the exams. But "fair exams that value critical thinking" is exactly what you want in an intro course. He's responsible for a lot of the curriculum that makes 61A special.
+
+Umesh Vazirani for algorithms (CS 170) is genuinely legendary in the field — he literally co-wrote the course textbook. Students say he explains concepts with "unparalleled clarity" and that his exams are fair and don't try to trick you. He's described as making discrete math and complexity theory feel interesting and even entertaining. If you care about CS theory at all, taking a course with him is a privilege.
+
+For Dan Garcia (CS 61C), opinions are more mixed. His lectures are lively and entertaining — he does this "flipped classroom" thing that works well for some students. But the grading is harsh: very little partial credit, exams are harder than average for an intro systems course, and he doesn't curve. About 66% would take him again according to RMP, which is lower than most popular Cal CS professors. He's a good person and a committed teacher, but go in knowing the exams require serious preparation.
+
+Slightly more niche rec: for anyone interested in the theory track, Prasad Raghavendra is excellent. He's taught CS 170 and his research in approximation algorithms and complexity theory is world-class. Students come out of his classes with a much deeper appreciation for why theoretical CS matters.
+
+The real answer is: the best professors at Cal are the ones who make hard material feel meaningful. Hug does that for data structures. Vazirani does that for algorithms. DeNero does that for intro programming. They're hard to get into, but worth the waitlist. Berkeley's CS department has some truly exceptional educators alongside the research-focused faculty — you just have to know who to look for.
+
+Don't sleep on TAs either. In a lot of upper-division courses the quality of your section TA matters as much as the professor. Read early reviews on Piazza or ask upperclassmen which sections are worth attending vs. which ones just repeat the lecture slides.

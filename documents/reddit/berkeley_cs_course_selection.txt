@@ -1,0 +1,26 @@
+SOURCE: reddit.com/r/berkeley
+TITLE: Best order to take Berkeley CS courses? Course sequencing advice for new CS majors
+URL: https://www.reddit.com/r/berkeley/comments/berkeley_cs_course_sequence
+
+POST:
+Just got admitted as a CS major (transferred in with some programming background). I know the core sequence is 61A -> 61B -> 70 -> 61C and then upper division, but I have a lot of questions about ordering. Should I take 70 concurrently with 61B? When does 170 make sense? Is there an optimal path through upper division or does it just depend on your interests? Looking for real student advice, not just the official prerequisite chart.
+
+COMMENTS:
+
+The standard lower-division path: 61A first, always. Then 61B and 70 can overlap — a lot of people take them concurrently, 61B in the fall and 70 in the spring of sophomore year, or together if you're confident. 61C can follow either of those. To declare the CS major you need all three: 61A, 61B, and CS 70. Don't sit on the declaration — Berkeley processes declarations in batches and you want enrollment priority as a junior/senior.
+
+For upper division, most students and guides suggest starting with CS 170 or Data 100 as your first upper-div courses. CS 170 is technically the gateway to most theory-heavy upper-division courses, and doing it early clears prerequisites for CS 172, 174, 176, etc. CS 170 pairs well with CS 188 — 188 is lighter workload and the AI concepts complement the algorithm design mindset you're building in 170. That's a common first upper-div semester combo.
+
+My recommended sequencing for a well-rounded CS education: Semester 1 upper-div: CS 170 + CS 188. Semester 2: CS 162 + CS 186 (systems double — intense but cohesive). Semester 3: CS 189 or CS 161 depending on your interest. Semester 4: specialization electives. The logic is you get theory early, systems together when you're ready, then ML/security once you have the full foundation.
+
+Don't sleep on taking 61C before upper division if you're interested in systems. CS 162 (Operating Systems) builds directly on the machine-level concepts from 61C. Students who skip or rush 61C often struggle in 162 because they're hazy on memory addresses, caches, and hardware-software interaction. The lower-division sequence really does build on itself.
+
+CS 70 is not a programming class — first half is proofs (logic, induction, graphs, modular arithmetic, RSA), second half is probability. This is important to know before you enroll. If you haven't done proof-based math before, don't underestimate the adjustment. CS 70 is a prerequisite for CS 170 for a reason: the proof techniques are foundational. Students who took 70 recently and did well find 170 more accessible than those who took it years earlier.
+
+One thing nobody tells you: BerkeleyTime (berkeleytime.com) is your friend for course planning. You can look up historical grade distributions and enrollment data for every course. Classes that look equivalent on paper can have wildly different grade distributions depending on the professor. Also check the enrollment history — some courses fill in the first round of enrollment, others have seats in Phase 2. Plan accordingly.
+
+For students interested in machine learning track: prioritize getting through the math prerequisites. CS 189 expects linear algebra (Math 54 or EE 16A/B), multivariable calculus (Math 53), and probability (CS 70 or Stat 134). Taking Data 100 before CS 189 is smart because it introduces you to the ML concepts more gently. CS 188 before CS 189 is also recommended — 188 gives you the conceptual scaffolding.
+
+For the systems track (162, 186, 164): CS 61C is essential foundation. After that, CS 186 is actually more accessible than CS 162 despite covering more complex material on the surface — the project structure in 186 is better scaffolded. Many students do 186 before 162 for this reason. CS 164 (compilers) should come after you're comfortable with both theory and systems — it's a synthesis of both worlds.
+
+One more practical note: upper-division enrollment is competitive. Have a backup plan for every course. If you can't get into CS 162, take CS 186 instead, and vice versa. If CS 170 fills up, it almost always runs both fall and spring — you won't be blocked for a full year. The guide.berkeley.edu and classes.berkeley.edu are the official tools for prerequisite checking, but student forums like r/berkeley and the AWE Berkeley Slack have more up-to-date advice on what actually pairs well.
