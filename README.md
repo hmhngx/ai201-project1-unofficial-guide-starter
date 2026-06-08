@@ -66,6 +66,106 @@ landing in chunks where they would confuse the embedding model.
 
 ---
 
+## Sample Chunks
+
+Five representative chunks from the corpus, one per source type:
+
+**Chunk 1 — source: `rmp` (`documents/rmp/cs_professors.txt`)**
+```
+=== Professor: Dan Garcia | Rating: 3.7/5 ===
+Professor Garcia is an amazing lecturer and a very kind person. That being said,
+he made the final very hard this semester without explanation, refused to release
+distribution data, and shifted the average grade nearly a full letter grade down.
+He then blamed students for using AI for doing poorly.
+```
+
+**Chunk 2 — source: `hkn` (`documents/hkn/cs170_guide.txt`)**
+```
+COURSE: CS 170 - Efficient Algorithms and Intractable Problems
+
+Overview
+CS 170 is an introductory course to theoretical computer science that surveys a variety
+of algorithm paradigms. The course emphasizes algorithm design, rigorous analysis, and
+proof techniques while also introducing complexity theory and NP-completeness. It is
+considered one of the most mathematically challenging upper-division CS courses at UC Berkeley.
+```
+
+**Chunk 3 — source: `reddit` (`documents/reddit/berkeley_best_cs_professors.txt`)**
+```
+Rising sophomore CS major here. I've heard the name "Josh Hug" mentioned approximately
+400 times in my first year and I want to understand who the actually legendary professors
+are across the CS curriculum. Not looking for easy A's — looking for professors who
+genuinely make you a better engineer or thinker. Who are the ones worth seeking out
+even if their course has a waitlist?
+```
+
+**Chunk 4 — source: `berkeleytime` (`documents/berkeleytime/cs189_reviews.txt`)**
+```
+COURSE: CS 189 - Introduction to Machine Learning
+Student review text was collected from Rate My Professors and Quora.
+BERKELEYTIME GRADE DATA (aggregated across semesters, Shewchuk sections):
+Grade distribution shows a significant curve; historical pass rates are high.
+Enrollment is competitive — the course fills quickly each semester.
+```
+
+**Chunk 5 — source: `reddit` (`documents/reddit/berkeley_cs170_difficulty.txt`)**
+```
+recommend taking it with him if you can. Pairing 170 with 188 is the classic move
+and I'd endorse it. 188 is interesting and the workload is genuinely lighter — good
+for your mental health when 170 psets are eating your soul on Wednesday nights.
+Avoid pairing 170 with 162 unless you're masochistic. 162 is possibly the most
+project-heavy course at Cal and both courses together is a recipe for sleep deprivation.
+```
+
+---
+
+## Retrieval Test Results
+
+All queries use the live ChromaDB index (147 chunks, `all-MiniLM-L6-v2`, top-k=5).
+Distances are cosine distances — lower is more similar.
+
+---
+
+**Query 1:** "Is CS 170 considered one of the harder upper-division CS courses at Berkeley?"
+
+| Rank | Distance | Source | File | Text (first 200 chars) |
+|------|----------|--------|------|------------------------|
+| 1 | 0.2034 | hkn | cs170_guide.txt | `upper-division CS courses at UC Berkeley. Prerequisites & Timing\nStudents should complete CS 61B and CS 70 before enrolling. CS 70 is particularly important as the course relies heavily on mathematica` |
+| 2 | 0.2700 | reddit | berkeley_cs_course_selection.txt | `and systems — it's a synthesis of both worlds. One more practical note: upper-division enrollment is competitive. Have a backup plan for every course.` |
+| 3 | 0.3274 | reddit | berkeley_cs_course_selection.txt | `advice, not just the official prerequisite chart. The standard lower-division path: 61A first, always. Then 61B and 70 can overlap` |
+| 4 | 0.3426 | reddit | berkeley_cs170_difficulty.txt | `Incoming junior here — I have CS 61B and CS 70 done and I'm planning to take CS 170 next semester. I keep hearing mixed things about it.` |
+| 5 | 0.3659 | berkeleytime | cs61c_reviews.txt | `CS 61C is commonly paired with CS 188 by students trying to double up, but this combination is considerably difficult.` |
+
+**Why the top chunks are relevant:** Rank 1 (distance 0.20) is the HKN CS 170 guide's overview section, which directly discusses the course's difficulty level among upper-division offerings — the closest possible semantic match. Rank 4 (distance 0.34) is a Reddit thread specifically about CS 170 difficulty, whose opening sentence asks "I keep hearing mixed things about it" — directly parallel to the query's framing. Rank 2 and 3 are general course-selection advice threads that discuss upper-division course load at Berkeley; they retrieve because of the shared "upper-division CS courses" vocabulary even though they don't specifically answer the difficulty question.
+
+---
+
+**Query 2:** "What should I know before taking CS 189?"
+
+| Rank | Distance | Source | File | Text (first 200 chars) |
+|------|----------|--------|------|------------------------|
+| 1 | 0.3546 | berkeleytime | cs189_reviews.txt | `Review 6: CS 189 is extremely time consuming and math-heavy — it is the more demanding counterpart to CS 188. If you want to go into machine le` |
+| 2 | 0.3555 | reddit | berkeley_cs_workload_tier_list.txt | `as "fun" while 189 is "extremely time consuming." CS 186 (Databases) is a good middle ground. The exam format is fair` |
+| 3 | 0.3590 | berkeleytime | cs189_reviews.txt | `Review 7: The mathematical prerequisites for CS 189 are far more useful predictors of success than programming background.` |
+| 4 | 0.3743 | reddit | cs61a_megathread.txt | `I took the class with absolutely no prior experience, and despite what everyone says, it is manageable. It's hard but doable.` |
+| 5 | 0.3877 | reddit | berkeley_cs_course_selection.txt | `For students interested in machine learning track: prioritize getting through the math prerequisites. CS 189 expects linear algebra (Math 54 or EE 16A/B` |
+
+**Why the top chunks are relevant:** Ranks 1 and 3 (both from `berkeleytime/cs189_reviews.txt`) are student reviews explicitly about CS 189's prerequisites and difficulty — the most direct match. Rank 5 is a course-selection Reddit thread that names the specific math prerequisites (linear algebra, multivariable calculus, probability) needed for CS 189. Rank 4 is a false positive: the chunk is about CS 61A, not CS 189 — it was retrieved because "no prior experience" and "manageable" appear in both CS 61A and CS 189 conversations.
+
+---
+
+**Query 3:** "What do students say about CS 61B projects and workload?"
+
+| Rank | Distance | Source | File | Text (first 200 chars) |
+|------|----------|--------|------|------------------------|
+| 1 | 0.3726 | berkeleytime | cs61c_reviews.txt | `Start early on the projects, especially since some of the projects require use of the school servers. Server capacity gets severely strained as deadlines approach.` |
+| 2 | 0.4001 | reddit | berkeley_cs170_difficulty.txt | `Incoming junior here — I have CS 61B and CS 70 done and I'm planning to take CS 170 next semester.` |
+| 3 | 0.4038 | reddit | cs61b_discussion.txt | `Starting a thread for CS 61B discussions since I keep seeing questions about it. Josh Hug is the main instructor most people take it with now. What's the actual workload like?` |
+| 4 | 0.4128 | reddit | berkeley_cs_workload_tier_list.txt | `CS 162 deserves its reputation. It is legitimately the most project-heavy course in the CS department.` |
+| 5 | 0.4131 | reddit | cs61a_megathread.txt | `Welcome to the CS 61A megathread! Use this thread for general questions about the course, tips for success, workload discussion.` |
+
+---
+
 ## Embedding Model
 
 **Model used:** `all-MiniLM-L6-v2` via `sentence-transformers` (local, no API cost).
@@ -117,6 +217,109 @@ insertion order) and returned as `result["sources"]` alongside the answer. The G
 displays it in a separate "Sources" panel beneath the answer. Even if the model generates an
 answer that omits attribution, the sources field is always populated from the retrieval
 metadata — the model cannot suppress or fabricate it.
+
+---
+
+## Example Responses
+
+The following responses are verbatim system output, with the "Sources" field as returned by
+the programmatic attribution in `generate()`.
+
+---
+
+**Query:** "Is CS 170 considered one of the harder upper-division CS courses at Berkeley?"
+
+**Answer:**
+> According to the context, some people say CS 170 is "the hardest proof-based class in the
+> CS department", while others say it's "totally manageable if you keep up". This suggests
+> that there is a mixed opinion about the difficulty of CS 170, but it is considered to be
+> a potentially challenging course.
+
+**Sources:** `hkn`, `reddit`, `berkeleytime`
+
+---
+
+**Query:** "What should students know before enrolling in CS 189?"
+
+**Answer:**
+> According to the context, students should know the following before enrolling in CS 189:
+>
+> 1. Linear algebra (Math 54 or EE 16A/B)
+> 2. Multivariable calculus (Math 53)
+> 3. Probability (CS 70 or Stat 134)
+>
+> It is also recommended that students take Data 100 and CS 188 before CS 189. Additionally,
+> having a solid mathematical background is more important than programming background for
+> success in CS 189.
+
+**Sources:** `berkeleytime`, `reddit`, `hkn`
+
+---
+
+**Out-of-scope query:** "What is the best pizza place near UC Berkeley campus?"
+
+**Answer:**
+> I don't have enough information on that.
+
+**Sources:** `berkeleytime`, `reddit`, `rmp`
+
+Note: the out-of-scope query still returns a sources list because attribution is extracted
+from whatever chunks happened to rank highest (all with cosine distances ≥ 0.59 — well above
+the 0.20–0.45 range for in-domain queries). The system does not use distance as a filter;
+it relies on the system prompt to produce the refusal instead. The high distance values are a
+diagnostic signal that retrieval failed, but the grounding instruction is what enforces the
+correct response.
+
+---
+
+## Query Interface
+
+**How to run:**
+```powershell
+python app.py
+# → open http://localhost:7860
+```
+
+**Input field:**
+- Label: "Your question"
+- Type: single-line text box
+- Placeholder: "e.g. What do students say about the workload in CS 61B?"
+- Submission: click the "Ask" button or press Enter
+
+**Output fields:**
+- **Answer** (8-line text box): the grounded response from `llama-3.3-70b-versatile`, restricted
+  to information found in the retrieved context documents. If no sufficient context was found,
+  the model responds with exactly: "I don't have enough information on that."
+- **Sources** (3-line text box): the deduplicated list of source names (`rmp`, `hkn`, `reddit`,
+  `berkeleytime`) extracted programmatically from the retrieved chunk metadata — not generated
+  by the LLM.
+
+**Sample interaction transcript:**
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│ Your question                                                        │
+│ What should students know before enrolling in CS 189?               │
+│                                            [Ask]                    │
+├─────────────────────────────────────────────────────────────────────┤
+│ Answer                                                               │
+│ According to the context, students should know the following before  │
+│ enrolling in CS 189:                                                 │
+│                                                                      │
+│ 1. Linear algebra (Math 54 or EE 16A/B)                             │
+│ 2. Multivariable calculus (Math 53)                                  │
+│ 3. Probability (CS 70 or Stat 134)                                   │
+│                                                                      │
+│ It is also recommended that students take Data 100 and CS 188        │
+│ before CS 189. Having a solid mathematical background is more        │
+│ important than programming background for success in CS 189.         │
+├─────────────────────────────────────────────────────────────────────┤
+│ Sources                                                              │
+│ • berkeleytime                                                       │
+│ • reddit                                                             │
+│ • hkn                                                                │
+└─────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
