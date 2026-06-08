@@ -226,3 +226,50 @@ def test_load_documents_text_matches_file_content(tmp_path):
 def test_load_documents_loads_all_13_real_documents():
     docs = load_documents("documents")
     assert len(docs) == 13, f"Expected 13 documents, got {len(docs)}"
+
+
+# --- build_chunks ---
+
+def test_build_chunks_returns_list_of_dicts(tmp_path):
+    (tmp_path / "rmp").mkdir()
+    (tmp_path / "rmp" / "test.txt").write_text(
+        "=== Professor: Test Prof | Rating: 4.0/5 ===\n" + "Great professor. " * 20,
+        encoding="utf-8",
+    )
+    chunks = build_chunks(str(tmp_path))
+    assert isinstance(chunks, list)
+    assert len(chunks) > 0
+    for chunk in chunks:
+        assert "text" in chunk
+        assert "source" in chunk
+        assert "file_path" in chunk
+
+
+def test_build_chunks_no_chunk_exceeds_size_limit(tmp_path):
+    (tmp_path / "rmp").mkdir()
+    (tmp_path / "rmp" / "long.txt").write_text("word " * 500, encoding="utf-8")
+    chunks = build_chunks(str(tmp_path), chunk_size=500, overlap=50)
+    for chunk in chunks:
+        assert len(chunk["text"]) <= 500, f"Chunk too long: {len(chunk['text'])}"
+
+
+def test_build_chunks_source_metadata_matches_subdir(tmp_path):
+    (tmp_path / "hkn").mkdir()
+    (tmp_path / "hkn" / "guide.txt").write_text("Guide content. " * 30, encoding="utf-8")
+    chunks = build_chunks(str(tmp_path))
+    for chunk in chunks:
+        assert chunk["source"] == "hkn"
+
+
+def test_build_chunks_real_documents_count_in_expected_range():
+    chunks = build_chunks("documents")
+    assert len(chunks) >= 50, f"Too few chunks: {len(chunks)} — chunks may be too large"
+    assert len(chunks) <= 2000, f"Too many chunks: {len(chunks)} — chunks may be too small"
+
+
+def test_build_chunks_no_chunk_shorter_than_minimum(tmp_path):
+    (tmp_path / "rmp").mkdir()
+    (tmp_path / "rmp" / "test.txt").write_text("Short.\n\n" + "Long content. " * 30, encoding="utf-8")
+    chunks = build_chunks(str(tmp_path))
+    for chunk in chunks:
+        assert len(chunk["text"]) >= 50

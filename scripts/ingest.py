@@ -84,4 +84,15 @@ def load_documents(documents_dir: str = 'documents') -> list:
 
 
 def build_chunks(documents_dir: str = 'documents', chunk_size: int = 500, overlap: int = 50) -> list:
-    pass  # implemented in Task 4
+    docs = load_documents(documents_dir)
+    all_chunks = []
+    for doc in docs:
+        cleaned = clean_text(doc['text'])
+        chunks = chunk_text(cleaned, chunk_size, overlap)
+        for chunk in chunks:
+            all_chunks.append({
+                'text': chunk,
+                'source': doc['source'],
+                'file_path': doc['file_path'],
+            })
+    return all_chunks
