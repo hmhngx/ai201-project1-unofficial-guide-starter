@@ -9,10 +9,12 @@
 
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+UC Berkeley CS professor and course reviews — student-generated opinions on teaching style,
+exam difficulty, workload, and course sequencing shared on Reddit, Rate My Professors,
+HKN course guides, and Berkeleytime. This knowledge is valuable because official sources
+like the course catalog describe content but never reflect what it's actually like to take
+the course or learn from a specific instructor. It's hard to find because it's fragmented
+across dozens of subreddits and buried in old threads with no unified search.
 
 ---
 
@@ -24,16 +26,19 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Rate My Professors — UC Berkeley CS | Short professor reviews | https://www.ratemyprofessors.com/school/1072 |
+| 2 | r/berkeley — CS 61A professor thread | Reddit thread | https://www.reddit.com/r/berkeley |
+| 3 | r/cs61a — advice megathread | Reddit thread | https://www.reddit.com/r/cs61a |
+| 4 | r/cs61b — professor and exam discussion | Reddit thread | https://www.reddit.com/r/cs61b |
+| 5 | r/berkeley — CS 170 difficulty thread | Reddit thread | https://www.reddit.com/r/berkeley |
+| 6 | r/berkeley — best CS professors thread | Reddit thread | https://www.reddit.com/r/berkeley |
+| 7 | HKN Course Guide — CS 61A | Long-form student guide | https://hkn.eecs.berkeley.edu/courseguides |
+| 8 | HKN Course Guide — CS 61B | Long-form student guide | https://hkn.eecs.berkeley.edu/courseguides |
+| 9 | HKN Course Guide — CS 170 | Long-form student guide | https://hkn.eecs.berkeley.edu/courseguides |
+| 10 | Berkeleytime — CS 189 reviews | Aggregated course reviews | https://berkeleytime.com |
+| 11 | Berkeleytime — CS 61C reviews | Aggregated course reviews | https://berkeleytime.com |
+| 12 | r/berkeley — CS workload tier list | Reddit thread | https://www.reddit.com/r/berkeley |
+| 13 | r/berkeley — CS course selection tips | Reddit thread | https://www.reddit.com/r/berkeley |
 
 ---
 
