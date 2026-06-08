@@ -45,7 +45,13 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> list:
                 chunk = para[start:start + chunk_size].strip()
                 if len(chunk) >= 50:
                     chunks.append(chunk)
-                start += chunk_size - overlap
+                next_start = start + chunk_size - overlap
+                # Snap next_start forward to word boundary
+                if next_start < len(para) and next_start > 0:
+                    space_idx = para.find(' ', next_start)
+                    if space_idx != -1 and space_idx < next_start + 20:
+                        next_start = space_idx + 1
+                start = next_start
             continue
 
         candidate = (buffer + '\n\n' + para).strip() if buffer else para
@@ -63,7 +69,13 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> list:
                     chunk = seeded[start:start + chunk_size].strip()
                     if len(chunk) >= 50:
                         chunks.append(chunk)
-                    start += chunk_size - overlap
+                    next_start = start + chunk_size - overlap
+                    # Snap next_start forward to word boundary
+                    if next_start < len(seeded) and next_start > 0:
+                        space_idx = seeded.find(' ', next_start)
+                        if space_idx != -1 and space_idx < next_start + 20:
+                            next_start = space_idx + 1
+                    start = next_start
                 buffer = ''
             else:
                 buffer = seeded
