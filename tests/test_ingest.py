@@ -174,3 +174,55 @@ def test_chunk_text_overlap_provides_continuity():
     chunks = chunk_text(text, chunk_size=500, overlap=50)
     assert len(chunks) >= 2
     assert "A" in chunks[1]
+
+
+# --- load_documents ---
+
+def test_load_documents_returns_list_of_dicts(tmp_path):
+    (tmp_path / "rmp").mkdir()
+    (tmp_path / "rmp" / "reviews.txt").write_text(
+        "Some review content here that is long enough.", encoding="utf-8"
+    )
+    docs = load_documents(str(tmp_path))
+    assert isinstance(docs, list)
+    assert len(docs) == 1
+    assert "text" in docs[0]
+    assert "source" in docs[0]
+    assert "file_path" in docs[0]
+
+
+def test_load_documents_source_is_subdir_name(tmp_path):
+    (tmp_path / "reddit").mkdir()
+    (tmp_path / "reddit" / "thread.txt").write_text("Reddit thread content.", encoding="utf-8")
+    docs = load_documents(str(tmp_path))
+    assert docs[0]["source"] == "reddit"
+
+
+def test_load_documents_file_path_ends_with_filename(tmp_path):
+    (tmp_path / "hkn").mkdir()
+    (tmp_path / "hkn" / "guide.txt").write_text("Guide content.", encoding="utf-8")
+    docs = load_documents(str(tmp_path))
+    assert docs[0]["file_path"].endswith("guide.txt")
+
+
+def test_load_documents_only_loads_txt_files(tmp_path):
+    (tmp_path / "rmp").mkdir()
+    (tmp_path / "rmp" / "reviews.txt").write_text("Review content.", encoding="utf-8")
+    (tmp_path / "rmp" / ".gitkeep").write_text("", encoding="utf-8")
+    (tmp_path / "rmp" / "notes.md").write_text("Markdown content.", encoding="utf-8")
+    docs = load_documents(str(tmp_path))
+    assert len(docs) == 1
+    assert docs[0]["file_path"].endswith("reviews.txt")
+
+
+def test_load_documents_text_matches_file_content(tmp_path):
+    (tmp_path / "berkeleytime").mkdir()
+    content = "CS 189 review: very math heavy."
+    (tmp_path / "berkeleytime" / "cs189.txt").write_text(content, encoding="utf-8")
+    docs = load_documents(str(tmp_path))
+    assert docs[0]["text"] == content
+
+
+def test_load_documents_loads_all_13_real_documents():
+    docs = load_documents("documents")
+    assert len(docs) == 13, f"Expected 13 documents, got {len(docs)}"

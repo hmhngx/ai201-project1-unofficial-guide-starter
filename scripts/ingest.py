@@ -70,7 +70,17 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> list:
 
 
 def load_documents(documents_dir: str = 'documents') -> list:
-    pass  # implemented in Task 3
+    docs = []
+    for root, _, files in os.walk(documents_dir):
+        for fname in sorted(files):
+            if not fname.endswith('.txt'):
+                continue
+            path = os.path.join(root, fname)
+            with open(path, encoding='utf-8') as f:
+                text = f.read()
+            source = os.path.basename(root)
+            docs.append({'text': text, 'source': source, 'file_path': path})
+    return docs
 
 
 def build_chunks(documents_dir: str = 'documents', chunk_size: int = 500, overlap: int = 50) -> list:
