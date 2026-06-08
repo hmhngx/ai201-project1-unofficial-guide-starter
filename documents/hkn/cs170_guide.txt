@@ -1,0 +1,66 @@
+SOURCE: hkn.eecs.berkeley.edu/courseguides
+COURSE: CS 170 - Efficient Algorithms and Intractable Problems
+URL: https://hkn.eecs.berkeley.edu/courseguides/CS/170
+
+Overview
+--------
+CS 170 is an introductory course to theoretical computer science that surveys a variety of algorithm paradigms. The course emphasizes algorithm design, rigorous analysis, and proof techniques while also introducing complexity theory and NP-completeness. It is considered one of the most mathematically challenging upper-division CS courses at UC Berkeley.
+
+Prerequisites & Timing
+-----------------------
+Students should complete CS 61B and CS 70 before enrolling. CS 70 is particularly important as the course relies heavily on mathematical proof techniques covered there, including probability, graphs, and modular arithmetic. Most students take CS 170 during their sophomore or junior year.
+
+Major Topics
+------------
+- Algorithm design and analysis
+- Lower bounds and computational complexity
+- Divide-and-conquer algorithms
+- Graph algorithms: BFS, DFS, shortest paths, minimum spanning trees
+- Greedy algorithms and correctness proofs
+- Dynamic programming
+- Linear programming and duality
+- Network flow
+- NP-completeness and reductions
+- Approximation algorithms
+- Randomized algorithms
+
+Workload
+--------
+The typical weekly workload consists of 3 hours of lectures, 1 hour of discussion section, and 10-15 hours on problem sets. This makes CS 170 one of the more time-intensive courses in the CS curriculum. Problem sets require writing pseudocode and proofs rather than executable programs. There is also one programming assignment during the semester.
+
+Assessment includes:
+- Weekly or biweekly problem sets (pseudocode and proofs)
+- One programming assignment
+- Two midterm exams
+- One final exam
+
+Tips and Advice
+---------------
+Start problem sets early — they are long and conceptually difficult. Waiting until the day before they are due is a common mistake that leads to poor performance and high stress.
+
+Form study groups. Many students find that working through problems collaboratively is the most effective way to understand the material. Discussion with peers helps identify gaps in understanding and exposes you to different problem-solving approaches.
+
+The course is very useful for technical interviews, as many interview questions require knowledge of algorithms and data structures covered in CS 170. Topics like graph traversal, dynamic programming, and greedy algorithms appear frequently in industry interviews.
+
+Past midterms and practice problems from the course textbook (Algorithms by Dasgupta, Papadimitriou, and Vazirani) are among the best study resources available. The textbook is freely available online.
+
+Attend discussion sections regularly — the problems worked through in discussion closely mirror what appears on exams.
+
+Do not neglect the theory portions (NP-completeness, reductions). These often appear heavily on the final exam and are difficult to learn at the last minute.
+
+Follow-up Courses
+-----------------
+- CS 188: Expands upon graph searches and approximate solutions to computationally intractable problems (AI course)
+- CS 172: Computability and Complexity — more rigorous theoretical treatment
+- CS 174: Combinatorics and Discrete Probability — related mathematical foundations
+- CS 176: Algorithms for Computational Biology
+- CS 270: Graduate-level combinatorial algorithms
+
+Resources
+---------
+- Algorithms textbook by Dasgupta, Papadimitriou, and Vazirani (freely available as PDF)
+- Course website with lecture notes and problem sets
+- HKN exam archive for past midterms and finals
+- Office hours with instructors and TAs
+- Piazza for Q&A
+- Study groups (highly recommended by past students and course staff)

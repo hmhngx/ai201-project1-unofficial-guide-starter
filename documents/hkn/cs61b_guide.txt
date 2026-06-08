@@ -1,0 +1,54 @@
+SOURCE: hkn.eecs.berkeley.edu/courseguides
+COURSE: CS 61B - Data Structures
+URL: https://hkn.eecs.berkeley.edu/courseguides/CS/61B
+
+Overview
+--------
+The purpose of CS 61B is to teach you basic algorithms, data structures, and fundamentals of software engineering, along with Java programming concepts. It is the second course in the core CS sequence at UC Berkeley and builds directly on concepts from CS 61A. The course is known for being rigorous and project-heavy, preparing students well for technical interviews and industry roles.
+
+Prerequisites
+-------------
+CS 61A, CS 88, or E7 are accepted as prerequisites. Students are expected to have a solid grasp of programming fundamentals before enrolling. Prior Java experience is helpful but not required — the course teaches Java from scratch, though at a fast pace.
+
+Key Topics
+----------
+- Object-oriented programming in Java
+- Data structures: linked lists, arrays, trees, heaps, hash tables, graphs
+- Sorting algorithms: merge sort, quicksort, radix sort
+- Searching and traversal algorithms
+- Dynamic programming
+- Software engineering fundamentals: version control (Git), testing, design patterns
+- Asymptotic analysis and runtime complexity (Big-O notation)
+
+Workload
+--------
+Students should expect approximately 5 hours of work outside class per week during non-project weeks. Major projects can demand significantly more time — potentially 50 or more hours for the largest assignments. Assessment includes weekly coding assignments (homework), lab sections, several large projects, two midterm exams, and a final exam.
+
+Instructor Variations
+---------------------
+The workload and style vary depending on the instructor:
+- Hilfinger: Projects and homeworks are very time-consuming, potentially 1000+ lines of code. Lectures are dense but thorough.
+- Shewchuk: Varying project scales with clear explanations in lecture. Known for accessible teaching style.
+- Hug: Intensive projects with higher-weighted midterms. Course materials are well-organized and student-friendly.
+
+Tips and Advice
+---------------
+Start projects as early as possible. This is the single most important piece of advice for 61B. The projects are long and require sustained effort — cramming them the night before a deadline is not feasible.
+
+The course starts out relatively manageable (learning Java syntax and basics) but becomes conceptually challenging once data structures and algorithm analysis are introduced. Do not fall behind in the second half of the semester.
+
+Even if you already know Java, the course covers Berkeley-specific depth and rigor that is valuable. Many students with prior Java experience still find the course challenging and worthwhile.
+
+This material is directly relevant for software engineering internships — many technical interview questions draw on CS 61B topics such as trees, graphs, sorting, and hashing.
+
+Form study groups early and use office hours frequently, especially during project weeks.
+
+Resources
+---------
+- Course website with lecture slides, readings, and project specs
+- Java documentation and the official Java API reference
+- Past midterms and finals available through HKN exam archive
+- Piazza for student Q&A and instructor clarifications
+- Office hours are heavily staffed, especially before project and exam deadlines
+- CS Mentors tutoring sessions available to all students
+- Git and GitHub for version control (used in all projects)

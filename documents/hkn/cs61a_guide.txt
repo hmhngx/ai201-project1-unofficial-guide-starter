@@ -1,0 +1,53 @@
+SOURCE: hkn.eecs.berkeley.edu/courseguides
+COURSE: CS 61A - Structure and Interpretation of Computer Programs
+URL: https://hkn.eecs.berkeley.edu/courseguides/CS/61A
+
+Overview
+--------
+CS 61A is not about learning a particular programming language but focuses on abstraction and problem-solving techniques. The course uses Python, Scheme, and SQL to teach core computer science concepts including functional programming, data abstraction, and object-oriented approaches. It is widely considered one of the most important foundational courses in the CS curriculum at UC Berkeley.
+
+Prerequisites & Alternatives
+------------------------------
+Math 1A is required (may be taken concurrently). There are no formal programming prerequisites, though most students have some prior coding experience. The guide suggests CS 10 or Data 8/CS 8 as lighter alternatives for those seeking a gentler introduction to programming concepts before jumping into 61A.
+
+Major Topics
+------------
+The curriculum spans the following areas:
+- Functions and higher-order functions
+- Data structures: lists, trees, linked lists
+- Object-oriented programming
+- Recursion and tree recursion
+- Iterators and generators
+- Interpreters and macros
+- SQL and declarative programming
+- Scheme (a dialect of Lisp)
+
+Workload
+--------
+Weekly commitments include approximately 3 lecture hours, 1.5 lab hours, 1.5 discussion hours, plus 3-4 hours of independent study. Project weeks require significantly more time — typically 6-10 additional hours per major project.
+
+Assignments include:
+- Weekly coding assignments (effort-graded)
+- Labs (completed in section or independently)
+- Four major projects throughout the semester
+- Two to three midterm exams
+- One final exam
+
+Tips and Advice
+---------------
+Staying current with lectures and assignments is essential. As the guide notes: "It is very easy to get behind in this course and since it can be fast-paced, it can be difficult to catch up." Students are strongly encouraged to gauge their readiness before enrollment by reviewing past course materials.
+
+Understanding recursion before or during the first weeks of the course is critical. Students who struggle with recursion early on are more likely to fall behind.
+
+Office hours and tutoring resources are heavily utilized by successful students. The course staff generally holds many office hours, especially before project deadlines.
+
+Start projects early — do not wait until the last day. Projects are complex and often require multiple sessions of debugging and iteration.
+
+Resources
+---------
+- Course website and online textbook (Composing Programs by John DeNero)
+- CS 61A Piazza forum for student Q&A
+- Past exam archives available through the course website and HKN
+- Office hours with TAs and course staff
+- CS Mentors (student-run tutoring group) offers additional support sessions
+- Study groups are highly encouraged by the course staff
