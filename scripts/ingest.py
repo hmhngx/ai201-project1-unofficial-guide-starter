@@ -2,6 +2,12 @@ import os
 import re
 
 
+def _snap_to_word_boundary(tail: str) -> str:
+    """Drop any leading partial word from a character-sliced overlap tail."""
+    idx = tail.find(' ')
+    return tail[idx + 1:].strip() if idx != -1 else tail.strip()
+
+
 def clean_text(text: str) -> str:
     lines = text.splitlines()
     cleaned = []
@@ -47,7 +53,8 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> list:
             if buffer and len(buffer) >= 50:
                 chunks.append(buffer)
             # Seed new buffer with overlap tail + current paragraph
-            tail = buffer[-overlap:].strip() if len(buffer) >= overlap else buffer.strip()
+            raw_tail = buffer[-overlap:] if len(buffer) >= overlap else buffer
+            tail = _snap_to_word_boundary(raw_tail)
             seeded = (tail + ' ' + para).strip() if tail else para
             if len(seeded) > chunk_size:
                 # seeded buffer itself exceeds limit — character-split it
