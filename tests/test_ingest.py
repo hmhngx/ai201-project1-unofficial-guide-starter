@@ -115,3 +115,55 @@ def test_clean_text_strips_whitespace_produces_clean_result():
     raw = "\n\n  Some content here.  \n\n"
     result = clean_text(raw)
     assert result == "Some content here."
+
+
+# --- chunk_text ---
+
+def test_chunk_text_no_chunk_exceeds_size_limit():
+    text = "x" * 1200
+    chunks = chunk_text(text, chunk_size=500, overlap=50)
+    for chunk in chunks:
+        assert len(chunk) <= 500, f"Chunk too long: {len(chunk)}"
+
+
+def test_chunk_text_no_empty_or_whitespace_only_chunks():
+    text = "Short para.\n\n\n\nAnother short para.\n\n   \n\nThird para."
+    chunks = chunk_text(text, chunk_size=500, overlap=50)
+    for chunk in chunks:
+        assert chunk.strip() != ""
+
+
+def test_chunk_text_enforces_minimum_length():
+    text = "Hi.\n\n" + "y" * 200
+    chunks = chunk_text(text, chunk_size=500, overlap=50)
+    for chunk in chunks:
+        assert len(chunk) >= 50, f"Chunk too short: {len(chunk)!r}"
+
+
+def test_chunk_text_preserves_all_content():
+    text = "Professor DeNero is excellent.\n\nHis lectures are clear and well-structured."
+    chunks = chunk_text(text, chunk_size=500, overlap=50)
+    combined = " ".join(chunks)
+    assert "Professor DeNero is excellent." in combined
+    assert "His lectures are clear and well-structured." in combined
+
+
+def test_chunk_text_splits_text_longer_than_chunk_size():
+    text = "a" * 1500
+    chunks = chunk_text(text, chunk_size=500, overlap=50)
+    assert len(chunks) >= 2
+
+
+def test_chunk_text_short_text_produces_one_chunk():
+    text = "This is a short review. " * 5  # ~120 chars, well under 500
+    chunks = chunk_text(text, chunk_size=500, overlap=50)
+    assert len(chunks) == 1
+
+
+def test_chunk_text_overlap_provides_continuity():
+    para_a = "A" * 400
+    para_b = "B" * 400
+    text = para_a + "\n\n" + para_b
+    chunks = chunk_text(text, chunk_size=500, overlap=50)
+    assert len(chunks) >= 2
+    assert "A" in chunks[1]

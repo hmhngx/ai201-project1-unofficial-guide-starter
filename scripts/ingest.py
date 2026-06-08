@@ -23,7 +23,39 @@ def clean_text(text: str) -> str:
 
 
 def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> list:
-    pass  # implemented in Task 2
+    paragraphs = [p.strip() for p in re.split(r'\n\n+', text) if p.strip()]
+    chunks = []
+    buffer = ''
+
+    for para in paragraphs:
+        if len(para) > chunk_size:
+            # Flush buffer first
+            if buffer and len(buffer) >= 50:
+                chunks.append(buffer)
+                buffer = ''
+            # Split large paragraph by characters with overlap
+            start = 0
+            while start < len(para):
+                chunk = para[start:start + chunk_size].strip()
+                if len(chunk) >= 50:
+                    chunks.append(chunk)
+                start += chunk_size - overlap
+            continue
+
+        candidate = (buffer + '\n\n' + para).strip() if buffer else para
+        if len(candidate) > chunk_size:
+            if buffer and len(buffer) >= 50:
+                chunks.append(buffer)
+            # Seed new buffer with overlap tail + current paragraph
+            tail = buffer[-overlap:].strip() if len(buffer) >= overlap else buffer
+            buffer = (tail + ' ' + para).strip() if tail else para
+        else:
+            buffer = candidate
+
+    if buffer and len(buffer.strip()) >= 50:
+        chunks.append(buffer.strip())
+
+    return chunks
 
 
 def load_documents(documents_dir: str = 'documents') -> list:
