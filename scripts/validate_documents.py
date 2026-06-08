@@ -1,5 +1,8 @@
 import os
 
+# Paths in DOCUMENTS are relative to the project root.
+# Run this script from C:\Codepath\ai201-project1-unofficial-guide-starter\
+
 DOCUMENTS = [
     "documents/rmp/cs_professors.txt",
     "documents/reddit/berkeley_cs61a_professor.txt",
@@ -31,8 +34,11 @@ def validate_documents(paths=None):
     for path in paths:
         if not os.path.exists(path):
             missing.append(path)
-        elif len(open(path, encoding="utf-8").read().strip()) < MIN_CHARS:
-            too_short.append(path)
+        else:
+            with open(path, encoding="utf-8") as f:
+                content = f.read().strip()
+            if len(content) < MIN_CHARS:
+                too_short.append(path)
     return {"missing": missing, "too_short": too_short}
 
 
@@ -47,4 +53,4 @@ if __name__ == "__main__":
         for f in results["too_short"]:
             print(f"  {f}")
     if not results["missing"] and not results["too_short"]:
-        print("All 13 documents present and non-empty.")
+        print(f"All {len(DOCUMENTS)} documents present and non-empty.")
