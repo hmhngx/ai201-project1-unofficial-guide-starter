@@ -13,10 +13,10 @@ def clean_text(text: str) -> str:
         if re.match(r'^[-=]{3,}$', line.strip()):
             continue
         # Remove POST: and COMMENTS: label lines
-        if line.strip() in ('POST:', 'COMMENTS:'):
+        if line.strip() in ('POST:', 'COMMENTS:', 'REVIEWS:') or re.match(r'^NOTE:\s', line):
             continue
         # Remove Reddit attribution prefixes (u/username:)
-        line = re.sub(r'^u/\w+:\s*', '', line)
+        line = re.sub(r'^u/[\w-]+:\s*', '', line)
         cleaned.append(line)
     result = re.sub(r'\n{3,}', '\n\n', '\n'.join(cleaned))
     return result.strip()

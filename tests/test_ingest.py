@@ -80,3 +80,38 @@ def test_clean_text_strips_leading_trailing_whitespace():
     raw = "\n\n  Some content.  \n\n"
     result = clean_text(raw)
     assert result == result.strip()
+
+
+def test_clean_text_removes_reviews_label():
+    raw = "REVIEWS:\nCS 189 is very math heavy."
+    result = clean_text(raw)
+    assert "REVIEWS:" not in result
+    assert "CS 189 is very math heavy." in result
+
+
+def test_clean_text_removes_note_label():
+    raw = "NOTE: Berkeleytime is a React app and blocks scraping.\n\nActual review text."
+    result = clean_text(raw)
+    assert "NOTE:" not in result
+    assert "Actual review text." in result
+
+
+def test_clean_text_removes_hyphenated_reddit_username():
+    raw = "u/some-user: Great class overall."
+    result = clean_text(raw)
+    assert "u/some-user:" not in result
+    assert "Great class overall." in result
+
+
+def test_clean_text_removes_bare_equals_separator():
+    raw = "Section content.\n===\nNext section."
+    result = clean_text(raw)
+    assert "\n===\n" not in result
+    assert "Section content." in result
+    assert "Next section." in result
+
+
+def test_clean_text_strips_whitespace_produces_clean_result():
+    raw = "\n\n  Some content here.  \n\n"
+    result = clean_text(raw)
+    assert result == "Some content here."
